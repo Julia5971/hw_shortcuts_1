@@ -1,0 +1,94 @@
+{
+    "windows": {
+        "name": "Windows 단축키",
+        "shortcuts": [
+            {
+                "id": "win-1",
+                "title": "파일 탐색기 열기",
+                "keys": ["Windows", "E"],
+                "description": "Windows 파일 탐색기를 엽니다.",
+                "category": "시스템",
+                "difficulty": "easy"
+            },
+            {
+                "id": "win-2",
+                "title": "실행 대화상자",
+                "keys": ["Windows", "R"],
+                "description": "프로그램 실행 대화상자를 엽니다.",
+                "category": "시스템",
+                "difficulty": "easy"
+            },
+            {
+                "id": "win-3",
+                "title": "작업 관리자",
+                "keys": ["Ctrl", "Shift", "Esc"],
+                "description": "작업 관리자를 엽니다.",
+                "category": "시스템",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    "chrome": {
+        "name": "Chrome 개발자 도구",
+        "shortcuts": [
+            {
+                "id": "chrome-1",
+                "title": "개발자 도구 열기",
+                "keys": ["F12"],
+                "description": "Chrome 개발자 도구를 엽니다.",
+                "category": "개발",
+                "difficulty": "easy"
+            },
+            {
+                "id": "chrome-2",
+                "title": "요소 검사",
+                "keys": ["Ctrl", "Shift", "C"],
+                "description": "요소 검사 모드를 활성화합니다.",
+                "category": "개발",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    "cursor": {
+        "name": "Cursor AI",
+        "shortcuts": [
+            {
+                "id": "cursor-1",
+                "title": "AI 명령 실행",
+                "keys": ["Ctrl", "K"],
+                "description": "AI 명령을 실행합니다.",
+                "category": "AI",
+                "difficulty": "easy"
+            },
+            {
+                "id": "cursor-2",
+                "title": "코드 설명 요청",
+                "keys": ["Ctrl", "L"],
+                "description": "선택한 코드에 대한 설명을 요청합니다.",
+                "category": "AI",
+                "difficulty": "medium"
+            }
+        ]
+    },
+    "vscode": {
+        "name": "VS Code",
+        "shortcuts": [
+            {
+                "id": "vscode-1",
+                "title": "명령 팔레트",
+                "keys": ["Ctrl", "Shift", "P"],
+                "description": "명령 팔레트를 엽니다.",
+                "category": "편집",
+                "difficulty": "easy"
+            },
+            {
+                "id": "vscode-2",
+                "title": "파일 검색",
+                "keys": ["Ctrl", "P"],
+                "description": "파일을 빠르게 검색합니다.",
+                "category": "탐색",
+                "difficulty": "easy"
+            }
+        ]
+    }
+} 

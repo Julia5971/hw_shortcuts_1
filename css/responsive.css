@@ -1,0 +1,108 @@
+/* 태블릿 (768px ~ 1023px) */
+@media screen and (max-width: 1023px) {
+    .main {
+        grid-template-columns: 200px 1fr;
+    }
+
+    .shortcuts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .main-nav ul {
+        gap: 1rem;
+    }
+}
+
+/* 모바일 (768px 미만) */
+@media screen and (max-width: 767px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 80%;
+        height: 100vh;
+        z-index: 1000;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .shortcuts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .header {
+        padding: 0.5rem 0;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+
+/* 작은 모바일 (480px 미만) */
+@media screen and (max-width: 479px) {
+    :root {
+        --font-size-base: 14px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .search-box input {
+        font-size: 0.8rem;
+    }
+
+    .search-box button {
+        padding: 0.5rem;
+    }
+}
+
+/* 높은 해상도 (1440px 이상) */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+
+    .shortcuts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+}
+
+/* 다크 모드 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #E1E4E8;
+        --background-color: #1A1A1A;
+        --sidebar-color: #24292E;
+        --border-color: #444D56;
+    }
+
+    .header {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .search-box input {
+        background-color: var(--sidebar-color);
+        color: var(--text-color);
+    }
+
+    .search-box input::placeholder {
+        color: #8B949E;
+    }
+} 

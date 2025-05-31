@@ -1,0 +1,172 @@
+:root {
+    /* 색상 시스템 */
+    --primary-color: #4A90E2;
+    --secondary-color: #50E3C2;
+    --text-color: #333333;
+    --background-color: #FFFFFF;
+    --sidebar-color: #F5F7FA;
+    --border-color: #E1E4E8;
+    
+    /* 상태 색상 */
+    --success-color: #28A745;
+    --warning-color: #FFC107;
+    --error-color: #DC3545;
+    --info-color: #17A2B8;
+    
+    /* 타이포그래피 */
+    --font-family: 'Noto Sans KR', sans-serif;
+    --font-size-base: 16px;
+    --line-height-base: 1.5;
+}
+
+/* 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 헤더 스타일 */
+.header {
+    background-color: var(--background-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* 메인 레이아웃 */
+.main {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    background-color: var(--sidebar-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.search-box {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.search-box button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #357ABD;
+}
+
+.category-nav h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.category-nav ul {
+    list-style: none;
+}
+
+.category-nav a {
+    display: block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.category-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* 콘텐츠 영역 */
+.content {
+    padding: 1rem;
+}
+
+.shortcuts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* 푸터 스타일 */
+.footer {
+    background-color: var(--sidebar-color);
+    padding: 2rem 0;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* 유틸리티 클래스 */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; } 
